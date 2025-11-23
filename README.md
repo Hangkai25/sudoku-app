@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Sudoku Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A React-based Sudoku game with two modes (6×6 and 9×9).  
+The project includes multiple views, global state management using Context + Reducer,  
+and additional features such as a timer, error checking, local storage, and a hint system.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Easy Mode (6×6)** and **Normal Mode (9×9)**
+- Automatically generated puzzles with unique solutions
+- Real-time error checking (row/column/sub-grid)
+- Fixed cells, editable cells, and incorrect cell highlighting
+- Timer that tracks play duration
+- New Game / Reset Game controls
+- **Hint system** (highlights a cell with only one valid number)
+- **Local Storage support** — game state persists across refreshes
+- **Responsive design** with a navigation bar
+- Multiple static pages (Scores, Rules, Login, Register)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Pages
 
-### `npm test`
+- **Home** — game title + image  
+- **Select** — links to Easy and Normal modes  
+- **Easy Game** — 6×6 Sudoku  
+- **Normal Game** — 9×9 Sudoku  
+- **Rules** — basic Sudoku rules and credits  
+- **Scores** — mock high score table  
+- **Login / Register** — simple mock forms  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Technology Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **React** (functional components)
+- **React Router**
+- **Context + Reducer** for global state
+- **LocalStorage** for persistence
+- **CSS** for styling
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## How to Run
 
-### `npm run eject`
+```bash
+npm install
+npm start
+```
+The app will open at:
+```bash
+http://localhost:3000
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
+## Credit
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+author: Hangkai Zhong
